@@ -68,7 +68,7 @@ atwhoOptions = {
           }
           break;
         case kind !== "m":
-          return $.getJSON(chrome.extension.getURL("/config/meigens.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/meigens.json"), function (data) {
             var boys, images;
             boys = [];
             if (query) {
@@ -92,7 +92,7 @@ atwhoOptions = {
             return callback(images);
           });
         case kind !== "i":
-          return $.getJSON(chrome.extension.getURL("/config/irasutoya.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/irasutoya.json"), function (data) {
             var illustrations, images;
             illustrations = [];
             if (query) {
@@ -117,7 +117,7 @@ atwhoOptions = {
             return callback(images);
           });
         case kind !== 's':
-          return $.getJSON(chrome.extension.getURL("/config/sushi_list.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/sushi_list.json"), function (data) {
             var images, sushiList;
             sushiList = [];
             if (query) {
@@ -141,7 +141,7 @@ atwhoOptions = {
             return callback(images);
           });
         case kind !== 'j':
-          return $.getJSON(chrome.extension.getURL("/config/js_girls.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/js_girls.json"), function (data) {
             var images, js_girls;
             js_girls = [];
             if (query) {
@@ -165,7 +165,7 @@ atwhoOptions = {
             return callback(images);
           });
         case kind !== 'n':
-          return $.getJSON(chrome.extension.getURL("/config/engineer_homeru_neko.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/engineer_homeru_neko.json"), function (data) {
             var images, source;
             source = [];
             if (query) {
@@ -189,7 +189,7 @@ atwhoOptions = {
             return callback(images);
           });
         case kind !== 'd':
-          return $.getJSON(chrome.extension.getURL("/config/decomoji.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/decomoji.json"), function (data) {
             var decomojis, images;
             decomojis = [];
             if (query) {
@@ -213,7 +213,7 @@ atwhoOptions = {
             return callback(images);
           });
         case kind !== 'r':
-          return $.getJSON(chrome.extension.getURL("/config/sushidot.json"), function (data) {
+          return $.getJSON(chrome.runtime.getURL("/config/sushidot.json"), function (data) {
             var images, sushidots;
             sushidots = [];
             if (query) {
